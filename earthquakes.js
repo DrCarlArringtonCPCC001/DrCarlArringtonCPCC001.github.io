@@ -20,7 +20,8 @@ d3.json(url).then(
         layer.bindPopup(`<center>
         <h3>${feature.properties.place}</h3>
         <hr>
-        <p>${new Date(feature.properties.timne)}</p>
+        <p>${new Date(feature.properties.time)}</p>
+        <p><b>Magnitude</b> ${feature.properties.mag.toFixed(2)}</p>
         </center>`);
       }
 
