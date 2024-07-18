@@ -15,6 +15,19 @@ d3.json(url).then(
     	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
     }).addTo(map);
 
+    function onEachFeature(feature, layer)
+      {
+        layer.bindPopup(`<center>
+        <h3>${feature.properties.place}</h3>
+        <hr>
+        <p>${new Date(feature.properties.timne)}</p>
+        </center>`);
+      }
+
+    let earthquakes = L.geoJSON(earthquakeData, {
+      onEachFeature: onEachFeature
+    }).addTo(map);
+
     
   }
 );
