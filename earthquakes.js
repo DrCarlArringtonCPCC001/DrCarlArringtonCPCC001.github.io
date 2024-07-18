@@ -24,7 +24,7 @@ d3.json(url).then(
         </center>`);
       }
 
-    let earthquakes = L.geoJSON(earthquakeData, {
+    let earthquakes = L.geoJSON(data.features, {
       onEachFeature: onEachFeature
     }).addTo(map);
 
