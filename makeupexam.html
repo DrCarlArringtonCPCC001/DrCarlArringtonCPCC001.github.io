@@ -107,5 +107,32 @@
         <td>53.0&deg; F</td>
       </tr>
     </table>
+    <p>
+      Code a modular program that uses parallel arrays to store the monthly average high monthly Fahrenheit temperatures for Charlotte in 2023, 
+      randomly generated average high monthly Fahrenheit temperatures based on the 2023 average monthly temperatures and calculated monthly high 
+      Celsius temperatures based on the randomly generated average high monthly Fahrenheit temperatures. 
+    </p>
+    <p>The program must do the following:</p>
+    <ol>
+      <li>The program must have an array of type <b>double</b> named <b>average2023FTemperatures</b> that stores the monthly average high monthly 
+        Fahrenheit temperatures for Charlotte in 2023. Use an initialization list to store the values mentioned above.
+      </li>
+      <li>
+        The program must have an array of type <b>double</b> named <b>genAverageFTemperatures</b> that stores the randomly generated monthly high Fahrenheit temperatures for the predictive analysis. 
+        Use a loop to populate the array by calling the <b>generateRandFahrenheitTemp()</b> function (function details below) and pass in each temperature from the <b>average2023FTemperatures</b> array.
+      </li>
+      <li>
+        The program must have an array of type <b>double</b> named <b>averageCTemperatures</b> that stores the calculated monthly high Celsius temperatures for the predictive analysis. 
+        Use a loop to populate the array by calling the <b>calcCelsiusTemp()</b> function (function details below) and pass in each temperature from the genAverageFTemperatures array.
+      </li>
+      <li>
+        The program must have a variable of type <b>double</b> named <b>meanFahrenheitTemp</b> that holds the calculated mean monthly Fahrenheit temperature using the array of generated monthly 
+        Fahrenheit temperatures, <b>genAverageFTemperatures</b>. This value must be calculated by calling the <b>calcMean()</b> function (function details below) and passing in the <b>genAverageFTemperatures</b> array.
+      </li>
+      <li>
+        The program must have a variable of type <b>double</b> named <b>meanCelsiusTemp</b> that holds the calculated mean monthly Celsius temperature using the array of calculated monthly Celsius 
+        temperatures, <b>averageCTemperatures</b>. This value must be calculated by calling the <b>calcMean()</b> function (function details below) and passing in the <b>averageCTemperatures</b> array.
+      </li>
+    </ol>
   </body>
 </html>
