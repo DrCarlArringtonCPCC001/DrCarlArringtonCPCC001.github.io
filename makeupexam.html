@@ -217,7 +217,23 @@
         arithmetic mean as: <i><b>(running total / number of months)</b></i>.
       </li>
       <br>
-      
+      <li>
+        calcVariance() – This is a <b>double</b>-returning function that must calculate the variance of monthly average high temperatures. <b>This function must accept an array of 
+        type double of monthly average high temperatures, an integer value that represents that represents the number of months in a year as parameters, and a value of type 
+        double that represents the arithmetic mean high average of monthly temperatures</b>. To calculate the variance, do the following: declare an array of type <b>double</b> based 
+        on the number of months to hold the calculated deviations, then populate the deviations array by looping through the array of temperatures and subtract the mean from 
+        the monthly average high temperature, then declare another array of type <b>double</b> to hold the squared deviations, then populate the squared deviations array by looping 
+        through the array of deviations and squaring each deviation <i><b>(deviation * deviation)</b></i>, then declare a variable of type <b>double</b> to hold the sum of the squared deviations 
+        and initialize the value to <b>0.0</b>, then calculate the sum of the squared deviations by looping through the array of squared deviations and adding each value to the sum 
+        of the squared deviations, then return the sum of squared deviations / number of months.
+      </li>
+      <br>
+      <li>
+        calcStandardDeviation() – This is a <b>double</b>-returning function that must calculate and return the standard deviation of the variance. <b>This function must accept a 
+        double representing the variance as a parameter</b>. The function then must call the sqrt() function to calculate and return the standard deviation of the variance. 
+        <b>NOTE: include the &lt;cmath&gt; header to enable the use of the sqrt() (square root) function</b>.
+      </li>
+      <br>
     </ul>
   </body>
 </html>
