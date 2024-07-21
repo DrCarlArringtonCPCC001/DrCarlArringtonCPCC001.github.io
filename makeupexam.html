@@ -263,16 +263,26 @@
       <h4>Sample Runs of the Program</h4>
       <h4>Submission Must Match the Formatting and Spacing in the Sample Run</h4>
       <h5>NOTE: Results may vary because of random number generation.</h5>
-      <img src="SampleRunA.PNG" title="Sample Run A">
-      <button onclick="showImage()">
+      <img src="SampleRunA.PNG" title="Sample Run A"><br>
+      <button onclick="showImageA()">
             Click to Show Sample Run A
+        </button>
+
+       <img src="SampleRunB.PNG" title="Sample Run B"><br>
+      <button onclick="showImageB()">
+            Click to Show Sample Run B
+        </button>
+
+       <img src="SampleRunC.PNG" title="Sample Run C"><br>
+      <button onclick="showImageC()">
+            Click to Show Sample Run C
         </button>
     </center>
 
 
     
         <script>
-            function showImage() {
+            function showImageA() {
                 var imageContainer =
                     document.createElement("div");
                 imageContainer.className =
@@ -281,6 +291,72 @@
                 var image =
                     document.createElement("img");
                 image.src ="SampleRunA.PNG";
+                var closeButton =
+                    document.createElement(
+                        "button"
+                    );
+                closeButton.textContent = "Close";
+                closeButton.className =
+                    "close-btn";
+                closeButton.onclick =
+                    function () {
+                        document.body.removeChild(
+                            imageContainer
+                        );
+                    };
+
+                imageContainer.appendChild(
+                    closeButton
+                );
+                imageContainer.appendChild(image);
+
+                document.body.appendChild(
+                    imageContainer
+                );
+            }
+
+          function showImageB() {
+                var imageContainer =
+                    document.createElement("div");
+                imageContainer.className =
+                    "image-container";
+
+                var image =
+                    document.createElement("img");
+                image.src ="SampleRunB.PNG";
+                var closeButton =
+                    document.createElement(
+                        "button"
+                    );
+                closeButton.textContent = "Close";
+                closeButton.className =
+                    "close-btn";
+                closeButton.onclick =
+                    function () {
+                        document.body.removeChild(
+                            imageContainer
+                        );
+                    };
+
+                imageContainer.appendChild(
+                    closeButton
+                );
+                imageContainer.appendChild(image);
+
+                document.body.appendChild(
+                    imageContainer
+                );
+            }
+
+          function showImageC() {
+                var imageContainer =
+                    document.createElement("div");
+                imageContainer.className =
+                    "image-container";
+
+                var image =
+                    document.createElement("img");
+                image.src ="SampleRunC.PNG";
                 var closeButton =
                     document.createElement(
                         "button"
